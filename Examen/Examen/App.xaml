@@ -2,9 +2,11 @@
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Examen"
-             x:Class="Examen.App">
+             x:Class="Examen.App"
+             xmlns:infra="clr-namespace:Examen.Infrastructures">
     <Application.Resources>
         <ResourceDictionary>
+            <infra:InstanceLocator x:Key="Locator"></infra:InstanceLocator>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
